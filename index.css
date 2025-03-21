@@ -127,6 +127,7 @@ h3 {
     line-height: 1;
     font-size: var(--font-size-huge);
     font-weight: 400;
+    color: var(--rose);
 }
 
 @media(max-width: 900px) {
@@ -294,17 +295,23 @@ body:not(.user-is-tabbing) a:focus {
 /* Header Formatting */
 
 .header {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), 
-                url('./images/header.png') center/cover fixed;
+    background: linear-gradient( var(--white-cream) 0%,
+    var(--white-cream) 40%, 
+    var(--deepgreen) 40%, 
+    var(--deepgreen) 80%), 
+                 center/cover fixed;
     height: 100vh;
     font-size: var(--font-size-normal);
+    color: var(--rose);
+   
 }
 
 .header__text {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    text-align: center; 
+    text-align: center;
+    color: var(--white-cream);
 }
 
 .header__social-links {
@@ -389,51 +396,15 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 
-.about__photo-container {
-    position: relative;
-    width: 30%; 
-  }
-  
-  
-  .overlapping-text {
-    position: absolute;
-    top: 50%;
-    left: 85%; 
-    transform: translateY(-50%); 
-    padding: 0.5rem;
+.about_photo-container_header{
+    width: 50%;
+    margin: var(--spacer-huge);
   }
 
-  .overlapping-desc {
-    position: absolute;
-    top: 75%;
-    left: 100%;  
-    font-size: 2rem;
+  .text-content {
+    display: flex;
+    flex-direction: column;
   }
-  
- 
-  @media (max-width: 900px) {
-    .about_photo-container_header {
-      width: 80%; 
-    }
-  
-    .overlapping-text {
-      font-size: 1.5rem; 
-      right: -10px; 
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .about_photo-container_header {
-      width: 100%; 
-    }
-  
-    .overlapping-text {
-      font-size: 1.2rem; 
-      right: -5px;
-    }
-  }
-  
-
 
 .about__photo-container {
     margin-bottom: var(--spacer-normal);
