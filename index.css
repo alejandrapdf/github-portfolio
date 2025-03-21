@@ -306,13 +306,6 @@ body:not(.user-is-tabbing) a:focus {
    
 }
 
-.header__text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: var(--white-cream);
-}
 
 .header__social-links {
     display: flex;
@@ -586,3 +579,37 @@ body:not(.user-is-tabbing) a:focus {
     height: 2px;
     background: var(--rose);
 }
+
+.about__me{
+    width: 30vw;
+    top: 65vh;
+    left: 95vh;
+}
+
+.about__me__row{
+    padding: var(--spacer-huge);
+    border-bottom: 1px solid var(--rose);
+}
+
+.overlapping-text {
+    position: absolute;
+    top: 65vh;
+    left: 95vh;
+    border-radius: 5px;
+    max-width: 40%;
+    color: var(--white-cream);
+    font-size: 1.5vw;
+  }
+
+  .overlapping-header {
+    position: absolute;
+    font-size: 4.5vw;
+    top: 45vh;
+    left: 80vh;
+    border-radius: 5px;
+    max-width: 45%;
+    color: var(--rose); 
+   
+  }
+
+  
