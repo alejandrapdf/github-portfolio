@@ -171,6 +171,7 @@ h3 {
 
 p {
     margin: var(--spacer-small-1) 0;
+    color: var(--white-cream);
 }
 
 @media(max-width: 900px) {
@@ -217,6 +218,8 @@ body:not(.user-is-tabbing) a:focus {
     font-weight: 400;
 }
 
+
+
 .btn:focus {
     outline: none;
 }
@@ -252,6 +255,21 @@ body:not(.user-is-tabbing) a:focus {
 .btn--rose:hover,
 .btn--rose:focus {
     background: transparent;
+}
+
+.btn--header {
+    background: transparent;
+    transition: all 0.2s;
+    border-radius: 100%;
+}
+
+.btn--header::after {
+    display: none;
+}
+
+.btn--header:hover,
+.btn--header:focus {
+    background: var(--rose);
 }
 
 .link__text {
@@ -408,7 +426,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__text {
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
 }
 
@@ -501,7 +519,6 @@ body:not(.user-is-tabbing) a:focus {
 .certification__logos {
     display: flex;
     justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
 }
 
 .certification__logo {
@@ -576,7 +593,15 @@ body:not(.user-is-tabbing) a:focus {
 
 .footer__social-image {
     height: 4rem;
+    
 }
+
+.header__social-image {
+    height: 4rem;
+ 
+    filter: sepia(2) saturate(290) hue-rotate(296deg) contrast(1.0) brightness(0.7);
+}
+
 
 .footer__github-buttons {
     display: flex;
