@@ -555,6 +555,9 @@ body:not(.user-is-tabbing) a:focus {
 .about__photo-container {
     margin-bottom: var(--spacer-normal);
 }
+.about__photo {
+    width: 50vw;
+}
 
 @media(min-width: 901px) {
     .about__text {
