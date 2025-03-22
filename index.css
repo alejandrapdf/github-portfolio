@@ -606,11 +606,12 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--rose);
 }
 
-.about__me{
-    width: 30vw;
- 
-    top: 65vh;
-    left: 95vh;
+.about__me__photo{
+    position: absolute;
+    top: 15vh;
+    left: 20vh;
+    border-radius: 5px;
+    max-width: 55vh;
 }
 
 .about__me__row{
@@ -619,10 +620,9 @@ body:not(.user-is-tabbing) a:focus {
 
 .overlapping-text {
     position: absolute;
-    top: 65vh;
-    left: 95vh;
-    border-radius: 5px;
-    max-width: 40%;
+    top: 50vh;
+    left: 85vh;
+    max-width: 55vh;
     color: var(--white-cream);
     font-size: 1.5vw;
   }
@@ -630,9 +630,8 @@ body:not(.user-is-tabbing) a:focus {
   .overlapping-header {
     position: absolute;
     font-size: 4.5vw;
-    top: 45vh;
+    top: 30vh;
     left: 80vh;
-    border-radius: 5px;
     max-width: 45%;
     color: var(--rose); 
    
