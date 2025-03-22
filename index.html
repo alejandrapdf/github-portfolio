@@ -4,49 +4,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="./images/alej.delg.jpg" />
 
-
+  <!-- Put your site title here -->
   <title>
-    Alejandra Delgado | IT Professional.
+    Alejandra Delgado Fernandez | IT Professional
   </title>
 
-  <meta name="description" content="I am motivated professional looking to start building my career in Finland">
-
-  <meta name="keywords" content="Alejandra Delgado, React, PowerBI, CSS" />
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 
+
   <header class="header" role="banner" id="top">
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Previous Work</a></li>
-          <li class="nav__item"><a href="#ui/ux" class="nav__link">UI/UX Design</a></li>
-          <!-- <li class="nav__item"><a href="#dataanalysis" class="nav__link">Data Analysis</a></li> -->
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
-    <div class="about__me__row">
-      <img src="./images/alej-delg.jpg" class="about__me__photo" alt="alej" />
-      <h1 class="overlapping-header">Alejandra Delgado Fernandez</h1>
-      <p class="overlapping-text">I am motivated professional looking to start building my career in Finland. I
-        am eager to learn, grow, and contribute to organisations where collaboration and innovation are valued. I
-        am committed to continuous improvement and am excited to bring my enthusiasm and perspective to a
-        professional setting.</p>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+         
+          <span>Alejandra Delgado Fernandez</span>
+        </h1>
+    
+        <p>I am motivated professional looking to start building my career in Finland. I
+          am eager to learn, grow, and contribute to organisations where collaboration and innovation are valued. I
+          am committed to continuous improvement and am excited to bring my enthusiasm and perspective to a
+          professional setting.</p>
+        <a href="#contact" class="btn btn--rose">Get in touch</a>
+      </div>
     </div>
-
   </header>
 
   <main role="main">
 
+    <!--  Work  -->
+
     <section class="work" id="work">
       <div class="row">
         <h2>Previous Work</h2>
-        
+        <div class="work__boxes">
 
+          
           <div class="work__box">
             <div class="work__text">
               <h3>Cardiac Arrest Defib</h3>
@@ -81,7 +95,6 @@
             </div>
           </div>
 
-
           <div class="work__box">
             <div class="work__text">
               <h3>Boston Metro System</h3>
@@ -107,53 +120,41 @@
             <div class="work__image-box">
               <img src="./images/boston-metro-system.jpg" class="work__image" style="width: 100%;"
                 alt="boston-metro-system" />
-            </div>
+             </div>
           </div>
 
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Satellite Operator System</h3>
+              <p>
+                Satellite Operator System is a cutting-edge project that was developed as part of a 4 day hackathon at
+                the European Space Tech Expo 2023. I participated as a team called Appstronauts creating the user
+                interface and back-end code for a web application that would allow users to operate and take satellite
+                images using the services offered by Leanspace.
+               </p>
+               <ul class="code__languages">
+                <li>React</li>
+                <li>CSS</li>
+                <li>HTML</li>
+              </ul>
 
-     
-
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Satellite Operator System</h3>
-                <p>
-                  Satellite Operator System is a cutting-edge project that was developed as part of a 4 day hackathon at
-                  the European Space Tech Expo 2023. I participated as a team called Appstronauts creating the user
-                  interface and back-end code for a web application that would allow users to operate and take satellite
-                  images using the services offered by Leanspace.
-                </p>
-                <ul class="code__languages">
-                  <li>React</li>
-                  <li>CSS</li>
-                  <li>HTML</li>
-                </ul>
-
-                <div class="work__links">
-                  <a href="https://github.com/alejandrapdf/AEDLocator" class="link__text">
-                    View Code <span>&rarr;</span>
-                  </a>
-                  <a href="https://github.com/alejandrapdf/AEDLocator">
-                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img src="./images/leanspace-home.png" class="work__image" alt="leanspace-1" />
-                <img src="./images/leanspace-satellite.png" class="work__image" alt="leanspace-satellite" />
-                <img src="./images/leanspace-results.png" class="work__image" alt="leanspace-1" />
+              <div class="work__links">
+                <a href="https://github.com/alejandrapdf/AEDLocator" class="link__text">
+                  View Code <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/alejandrapdf/AEDLocator">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
               </div>
             </div>
-
-         
-        
-    </section>
-
-    
-
-    <section class="ui/ux" id="ui/ux">
-      <div class="row">
-        <h2>UI/UX</h2>
-        <div class="work__boxes">
+            <div class="work__image-box">
+              <img src="./images/leanspace-home.png" class="work__image" alt="leanspace-1" />
+              <img src="./images/leanspace-satellite.png" class="work__image" alt="leanspace-satellite" />
+              <img src="./images/leanspace-results.png" class="work__image" alt="leanspace-1" />
+            </div>
+          
+          
+          </div>
 
           <div class="work__box">
             <div class="work__text">
@@ -166,13 +167,19 @@
                 now have an innovative tool to help them reach their academic goals while also taking care of their
                 physical and mental health.
               </p>
-              <ul class="tools_utilised">
+               <ul class="code__languages">
                 <li>Canva</li>
                 <li>Figma</li>
-
               </ul>
 
-
+              <div class="work__links">
+                <a href="https://github.com/alejandrapdf/AEDLocator" class="link__text">
+                  View Code <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/alejandrapdf/AEDLocator">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
             </div>
             <div class="work__image-box">
               <img src="./images/growthguru.png" class="work__image" alt="growthguru" />
@@ -180,73 +187,93 @@
               <img src="./images/growthguru-main.png" class="work__image" alt="growthguru" />
               <img src="./images/choose-guru.png" class="work__image" alt="growthguru" />
               <img src="./images/grow.png" class="work__image" alt="growthguru" />
-
-            </div>
           </div>
-
+          
+          
+          </div>
 
         </div>
       </div>
     </section>
 
-    <!-- <section class="dataanalysis" id="dataanalysis">
+    <!--  Certifications  -->
+
+    <section class="certifications" id="certifications">
       <div class="row">
-        <h2>Data Analysis</h2>
-        <div class="work__boxes">
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>PowerBi</h3>
-              <p>
-              
-              </p>
-              <ul class="tools_utilised">
-                <li>PowerBi</li>
-
-              </ul>
-
-
-            </div>
-            <div class="work__image-box">
-              <img src="./images/growthguru.png" class="work__image" alt="growthguru" />
-              
-
-            </div>
-          </div>
-
-
+        <h2>Certifications</h2>
+        <div class="certification__logos">
+          
+         
+          <img src="./images/alej-delg.jpg" class="certification__logo" alt="Certificate 1" />
         </div>
       </div>
-    </section> -->
+    </section>
 
+    <!-- About -->
 
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+          
+            <p>
+              I am...
+            </p>
+            
+            <a href="#" class="btn">CV</a>
+          </div>
 
+          <div class="about__photo-container">
+           
+            <img class="about__photo" src="./images/alej.delg.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!--  Contact -->
 
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Get in touch!
+        </p>
+
+        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
 
   <footer role="contentinfo" class="footer">
     <div class="row">
-
+   
       <ul class="footer__social-links">
+      
         <li class="footer__social-link-item">
           <a href="https://github.com/alejandrapdf" title="Link to Github Profile">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
+    
         <li class="footer__social-link-item">
           <a href="https://www.linkedin.com/in/alejandradelgadofern%C3%A1ndez/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
-              alt="Linkedin">
+            <img src="./images/linkedin.svg" title="Linkedin Profile" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
       </ul>
 
-
+     
+    </div>
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow.svg" alt="Back to Top" class="back-to-top__image" />
+    <img src="./images/arrow.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
   <script src="./index.js"></script>
 </body>
