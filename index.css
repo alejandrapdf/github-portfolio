@@ -1,18 +1,19 @@
 /* Foundation Colours */
 
+
 @font-face {
-    font-family: Arial;
+    font-family: 'Lora-Regular';
     font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/HKGrotesk-Regular.woff') format('woff');
+    src: url('./fonts/Lora-Regular.ttf') format('woff');
 }
 
 @font-face {
-    font-family: Arial;
+    font-family: 'Lora-Bold';
     font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/Jost-Regular.ttf') format('woff');
+    src: url('./fonts/Lora-Bold.ttf') format('woff');
 }
+
+
 
 * {
     margin: 0;
@@ -22,12 +23,12 @@
 
 :root {
     --font-size-small: 1.8rem;
-    --font-size-normal: 2.2rem;
+    --font-size-normal: 5rem;
     --font-size-medium: 2.8rem;
     --font-size-medium-1: 3.6rem;
-    --font-size-large: 5.5rem;
-    --font-size-huge: 7.5rem;
-    --font-stack: sans-serif;
+    --font-size-large: 7rem;
+    --font-size-huge: 14rem;
+    --font-stack: 'Lora-Regular';
 
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
@@ -38,33 +39,31 @@
     --white: #e5e5e6;
 
 
-    --container-max-width: 90%;
+    --container-max-width: 400vw;
     --container-normal-width: 800px;
     --container-medium-width: 700px; 
     --container-small-width: 500px;
 
-    --spacer-huge: 10rem;
-    --spacer-medium: 6rem;
-    --spacer-normal: 3rem;
-    --spacer-small: 2rem;
+    --spacer-huge: 50rem;
+    --spacer-small: 11rem;
 
     --border-light: 1px solid rgb(36, 35, 35);
 }
 
 html {
-    font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
+    font-size: 70%; 
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 @media(max-width: 1000px) {
     html {
-        font-size: 52%;
+        font-size: 70%;
     }
 }
 
 body {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-normal);
     font-family: var(--font-stack);
     font-weight: 400;
     color: var(--white);
@@ -75,7 +74,8 @@ body {
 
 .row {
     max-width: var(--container-max-width);
-    margin: 0 var(--spacer-medium);
+    margin: 0 var(--spacer-huge);
+    
 }
 
 @media(max-width: 1340px) {
@@ -117,9 +117,9 @@ img {
 h1,
 h2,
 h3 {
-    font-family: sans-serif;
+    font-family: 'Lora-Bold';
     font-weight: 400;
-    line-height: var(--line-height-small);
+    line-height: var(--line-height-normal);
     color: var(--white-cream);
 }
 
@@ -136,9 +136,10 @@ h3 {
     }
 }
 
+/* Previous Work/UI/UX title etc*/
+
 h2 {
-    font-size: var(--font-size-large);
-    margin-bottom: var(--spacer-medium);
+    font-size: var(--font-size-huge);
 }
 
 h2::after {
@@ -147,27 +148,30 @@ h2::after {
     height: 2px;
     width: 10rem;
     background: var(--rose);
-    margin: var(--spacer-small) 0;
 }
 
+/* Project titles*/
+
 h3 {
-    font-size: var(--font-size-medium-1);
-    margin-bottom: var(--spacer-small);
+    font-size: var(--font-size-large);
+    margin-top: var(--spacer-small);
 }
 
 @media(max-width: 500px) {
     .heading-primary {
-        font-size: var(--font-size-large);
+        font-size: var(--font-size-huge);
     }
 
     h2 {
-        font-size: var(--font-size-medium-1);
+        font-size: var(--font-size-large);
     }
 
     h3 {
-        font-size: var(--font-size-medium);
+        font-size: var(--font-size-large);
     }
 }
+
+/*project text */
 
 p {
     margin: var(--spacer-small) 0;
@@ -184,7 +188,7 @@ p {
 a {
     color: var(--white-cream);
     font-weight: 400;
-    font-family: sans-serif;
+    font-family: 'Lora-Regular';
     transition: all .2s;
     outline: 2px solid transparent;
 }
@@ -261,6 +265,7 @@ body:not(.user-is-tabbing) a:focus {
     color: inherit;
     text-decoration: none;
     border-bottom: 1px solid var(--rose);
+    margin-right: 2vh;
 }
 
 .link__text::after {
@@ -288,7 +293,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .link__text span {
     padding-left: 1rem;
-    font-family: sans-serif;
+    font-family: 'Lora-Regular';
 }
 
 
@@ -301,7 +306,7 @@ body:not(.user-is-tabbing) a:focus {
     var(--deepgreen) 80%), 
                  center/cover fixed;
     height: 100vh;
-    font-size: var(--font-size-normal);
+    font-size: var(--font-size-huge);
     color: var(--rose);
    
 }
@@ -318,8 +323,8 @@ body:not(.user-is-tabbing) a:focus {
 .header__text p {
     margin: 1.5rem 0 3.5rem;
     max-width: var(--container-medium-width);
-    font-family: sans-serif;
-    font-size: var(--font-size-medium);
+    font-family: 'Lora-Regular';
+    font-size: var(--font-size-huge);
 }
 
 @media (max-width: 500px) {
@@ -348,11 +353,12 @@ body:not(.user-is-tabbing) a:focus {
     }
 
     .work__code {
-        height: 4rem;
+        height: 10rem;
     }
 }
 
 .work__links {
+    margin-top: var(--spacer-small);
     display: flex;
     align-items: center;
 }
@@ -368,7 +374,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__code {
     display: block;
-    height: 3rem;
+    height: 10rem;
     margin-left: var(--spacer-normal);
     transition: transform 0.3s;
 }
@@ -463,7 +469,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .footer__social-image {
-    height: 4rem;
+    height: 10rem;
 }
 
 .footer__github-buttons {
@@ -494,8 +500,8 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 15rem;
+    height: 15rem;
     background-color: var(--rose);
     border-radius: 50%;
     z-index: 10;
@@ -528,16 +534,20 @@ body:not(.user-is-tabbing) a:focus {
 .nav {
     display: flex;
     justify-content: flex-end;
-    padding: var(--spacer-small) var(--spacer-medium) var(--spacer-small);
-    border-bottom: 2px solid var(--deepgreen); 
+    font-size: var(--font-size-large);
+   
 }
 
 .nav__items {
     display: flex;
     list-style: none;
-    gap: var(--spacer-medium); 
     
 }
+
+.nav__item {
+    margin-right: var(--spacer-huge);
+}
+
 
 .nav__main {
     display: flex;
@@ -551,15 +561,10 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-@media (max-width: 400px) {
-    .nav__items {
-        gap: var(--spacer-normal);
-    }
-}
 
 @media (max-width: 300px) {
     .nav {
-        font-size: var(--font-size-small);
+        font-size: var(--font-size-normal);
     }
 }
 
@@ -581,8 +586,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 0;
     color: var(--rose);
     transition: color 0.2s;
-    font-weight: bold;
-    margin-right: auto;
+    
 }
 
 .nav__link::after {
@@ -592,7 +596,7 @@ body:not(.user-is-tabbing) a:focus {
     left: 0;
     right: 100%;
     height: 1rem;
-    background: var(--white-cream);
+    background: var(--rose);
     transition: right 0.25s cubic-bezier(1, 0.68, 0.16, 0.9), height 0.25s;
 }
 
@@ -605,36 +609,64 @@ body:not(.user-is-tabbing) a:focus {
     height: 2px;
     background: var(--rose);
 }
+.about__me__row {
+    position: relative; /* Ensures everything inside is positioned correctly */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-.about__me__photo{
+/* Image Styling */
+.about__me__photo {
     position: absolute;
-    top: 15vh;
-    left: 20vh;
-    border-radius: 5px;
-    max-width: 55vh;
+    top: 30%;
+    left: 35%;
+    transform: translateX(-50%);
+    width: 30vw;
 }
 
-.about__me__row{
-    border-bottom: 1px solid var(--rose);
+
+/* Overlapping Header */
+.overlapping-header {
+    position: absolute;
+    font-size: 4vw;
+    top: 30%;
+    left: 65%;
+    transform: translateX(-50%);
+    color: var(--rose);
+    text-align: left;
 }
 
+/* Overlapping Text */
 .overlapping-text {
     position: absolute;
-    top: 50vh;
-    left: 85vh;
-    max-width: 55vh;
-    color: var(--white-cream);
     font-size: 1.5vw;
-  }
+    top: calc(30% + 8em);
+    left: 70%;
+    transform: translateX(-50%);
+    color: var(--white-cream);
+    max-width: 30vw;
+    text-align: left;
+}
 
-  .overlapping-header {
-    position: absolute;
-    font-size: 4.5vw;
-    top: 30vh;
-    left: 80vh;
-    max-width: 45%;
-    color: var(--rose); 
-   
-  }
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .about__me__photo {
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        transform: translateX(-50%);
+        width: 20vw;
+    }
 
-  
+    .overlapping-header {
+        font-size: 5vw;
+        top: 25%;
+    }
+    .overlapping-text {
+        font-size: 3vw;
+        top: calc(25% + 2em); /* Adjusts dynamically on small screens */
+        max-width: 80%;
+    }
+}
