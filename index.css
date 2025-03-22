@@ -498,15 +498,34 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box {
-    margin-bottom: var(--spacer-normal);
+    margin: var(--spacer-normal);
+    display: flex;
+    gap: var(--spacer-normal);
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
+    max-width: 100%; 
 }
 
 @media(min-width: 901px) {
-    .work__image-box {
-        flex: 1;
-        margin: 0 0 0 10rem;
+
+    .work__image-box img {
+        width: 33%;  
+        max-width: 100%;
+        height: auto;  
+        flex-shrink: 1;
+        object-fit: contain;
     }
 }
+
+@media(max-width: 900px) {
+    .work__image-box img {
+        width: 80%;  
+        max-width: 100%;
+        margin-bottom: var(--spacer-small); 
+        object-fit: contain;
+        }
+}
+
 
 @media(max-width: 900px) {
     .work__code {
