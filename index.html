@@ -14,18 +14,15 @@
  <link rel="stylesheet" href="index.css" />
 </head>
 
-<!-- <div id="analytics-container"></div> -->
-<!-- 
+<script src="config.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=" + window.GA_MEASUREMENT_ID></script>
 <script>
-  fetch("config.html")
-    .then(response => response.text())
-    .then(data => {
-      let scriptContainer = document.createElement("div");
-      scriptContainer.innerHTML = data;
-      document.body.appendChild(scriptContainer);
-    })
-    .catch(error => console.error("Error loading config.html:", error));
-</script> -->
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', window.GA_MEASUREMENT_ID);
+</script>
+
 
 <body>
 
