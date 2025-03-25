@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+ 
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/alej.delg.jpg" />
@@ -11,6 +13,19 @@
   </title>
  <link rel="stylesheet" href="index.css" />
 </head>
+
+<div id="analytics-container"></div>
+
+<script>
+  fetch("config.html")
+    .then(response => response.text())
+    .then(data => {
+      let scriptContainer = document.createElement("div");
+      scriptContainer.innerHTML = data;
+      document.body.appendChild(scriptContainer);
+    })
+    .catch(error => console.error("Error loading config.html:", error));
+</script>
 
 <body>
 
