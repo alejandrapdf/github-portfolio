@@ -37,9 +37,7 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-      - name: Inject Google Analytics ID
-        run: |
-          sed -i "s/GA_MEASUREMENT_ID/${{ secrets.GA_MEASUREMENT_ID }}/g" index.html
+      
 
   # Deployment job
   deploy:
@@ -49,6 +47,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Inject Google Analytics ID
+        run: |
+          sed -i "s/GA_MEASUREMENT_ID/${{ secrets.GA_MEASUREMENT_ID }}/g" index.html
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
