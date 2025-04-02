@@ -497,39 +497,46 @@ body:not(.user-is-tabbing) a:focus {
     transform: scale(1.2);
 }
 
-.work__image-box {
-    margin: var(--spacer-normal);
-    display: flex;
-    gap: var(--spacer-normal);
-    flex-wrap: nowrap; 
-    justify-content: flex-start; 
-    max-width: 100%; 
-}
-
-@media(min-width: 901px) {
-
-    .work__image-box img {
-        width: 33%;  
-        max-width: 100%;
-        height: auto;  
-        flex-shrink: 1;
-        object-fit: contain;
-    }
-}
-
-@media(max-width: 900px) {
-    .work__image-box img {
-        width: 80%;  
-        max-width: 100%;
-        margin-bottom: var(--spacer-small); 
-        object-fit: contain;
-        }
-}
-
 
 @media(max-width: 900px) {
     .work__code {
         height: 4rem;
+    }
+}
+
+.work__image-box {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--spacer-normal);
+    gap: var(--spacer-normal);
+  
+}
+
+.work__image {
+    max-height: 100rem;
+    max-width: 20rem;
+    
+}
+
+@media(max-width: 900px) {
+    .work__image-box {
+        overflow-x: scroll;
+        padding: var(--spacer-normal);
+    }
+
+    .work__image:not(:last-of-type) {
+        margin-right: var(--spacer-medium);
+    }
+}
+
+@media(max-width: 1240px) {
+    .work__image-box {
+        overflow-x: scroll;
+        padding: var(--spacer-normal);
+    }
+
+    .work__image:not(:last-of-type) {
+        margin-right: var(--spacer-medium);
     }
 }
 
