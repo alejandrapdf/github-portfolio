@@ -412,16 +412,18 @@ body:not(.user-is-tabbing) a:focus {
 /* Header */
 
 .header {
-    background: linear-gradient( var(--white-cream) 0%,
-    var(--white-cream) 40%, 
-    var(--deepgreen) 40%, 
-    var(--deepgreen) 80%), 
-                 center/cover fixed;
-    height: 100vh;
+    background: linear-gradient(
+    var(--white-cream) 0%, 
+    var(--white-cream) 20%,  
+    var(--deepgreen) 20%, 
+    var(--deepgreen) 80%
+);
+    height: 80vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-size: var(--font-size-normal);
+   
 }
 
 .header__text {
@@ -481,7 +483,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .code__languages {
-   
     list-style-position: inside;
     margin-bottom: var(--spacer-normal);
 }
