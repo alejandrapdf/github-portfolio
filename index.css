@@ -541,7 +541,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .certification__logo {
-    height: 6.5rem;
+    height: 20rem;
     max-width: 18rem;
 }
 
