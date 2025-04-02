@@ -601,7 +601,7 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--spacer-normal);
 }
 .about__photo {
-    width: 50vw;
+    width: 40vw;
 }
 
 @media(min-width: 901px) {
