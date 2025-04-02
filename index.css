@@ -509,14 +509,32 @@ body:not(.user-is-tabbing) a:focus {
     justify-content: space-between;
     margin: var(--spacer-normal);
     gap: var(--spacer-normal);
-  
+    overflow-x: scroll;
 }
+
 
 .work__image {
     max-height: 100rem;
-    max-width: 20rem;
+    max-width: 60rem;
     
 }
+
+ /* For Landscape images */
+@media (min-aspect-ratio: 1/1) {
+    .work__image {
+        max-height: 50rem; 
+        max-width: 60rem;
+    }
+}
+
+ /* For Portrait images */
+@media (max-aspect-ratio: 1/1) {
+    .work__image {
+        max-height: 80rem;  
+        max-width: 40rem;
+    }
+}
+
 
 @media(max-width: 900px) {
     .work__image-box {
