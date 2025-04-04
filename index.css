@@ -171,7 +171,7 @@ h3 {
 
 p {
     margin: var(--spacer-small-1) 0;
-    color: var(--white-cream);
+    color: var(--rose);
 }
 
 @media(max-width: 900px) {
