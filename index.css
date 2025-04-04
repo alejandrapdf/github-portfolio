@@ -646,8 +646,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__social-image {
     height: 4rem;
- 
-    filter: sepia(2) saturate(290) hue-rotate(296deg) contrast(1.0) brightness(0.7);
+    filter: sepia(500) saturate(290) hue-rotate(298deg) contrast(1.0) brightness(0.6);
 }
 
 
